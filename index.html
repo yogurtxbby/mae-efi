@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando...</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 40px;
+    }
+
+    .text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .progress-container {
+      width: 250px;
+      height: 6px;
+      background: #f0f0f0;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: orange;
+      animation: load 3s forwards;
+    }
+
+    @keyframes load {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.imgur.com/OyLXiIx.png" alt="Logo" class="logo">
+  <div class="text">Te redirecionando...</div>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://privacygirl.com.br/";
+    }, 3000);
+  </script>
+</body>
+</html>
